@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="result"></p>
+</body>
+</html>
+<script>
+    let a = parseInt(prompt('Nhập a: '));
+    let b = parseInt(prompt('Nhập b: '));
+    let c = parseInt(prompt('Nhập c: '));
+
+    if (a === b || a === c  || b === c ) {
+        document.getElementById("result").innerHTML = 'a, b, c là cạnh của 1 tam giác cân'
+    }
+    else {
+        document.getElementById("result").innerHTML = ' a, b, c ko phải là cạnh của 1 tam giác cân'
+    }
+</script>
