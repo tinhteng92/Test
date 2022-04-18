@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="result"></p>
+</body>
+</html>
+<script>
+    let a = parseInt(prompt('Nhập a: '));
+    let b = parseInt(prompt('Nhập b: '));
+    let c = parseInt(prompt('Nhập c: '));
+    let tamgiac = '';
+
+    if (a + b > c && a + c > b && b + c > a) {
+        tamgiac = 'abc la canh cua tam giac';
+        if ( a === b || a === c || b === c) {
+            tamgiac = 'abc la tam giac can';
+        }else if (a === b && a === c ) {
+            tamgiac = 'abc la tam giac deu'
+            }else if (a * a === b * b + c * c || b * b === c * c + a * a || c * c === b * b + a * a) {
+            tamgiac = 'abc la tam giac vuong'
+        }
+    }else {
+        tamgiac = 'abc ko phai la canh cua 1 tam giac'
+    }
+    document.getElementById('result').innerHTML = tamgiac;
+    
+
+
+</script>
