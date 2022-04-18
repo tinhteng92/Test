@@ -12,11 +12,11 @@
     let a = parseInt(prompt('Nhập a: '));
     let b = parseInt(prompt('Nhập b: '));
     let c = parseInt(prompt('Nhập c: '));
-
-    if (a*a===b*b+c*c ||b*b===c*c+a*a || c*c===b*b+a*a ) {
-        document.getElementById("result").innerHTML = 'a, b, c là cạnh của 1 tam giác vuông'
-    }
-    else {
-        document.getElementById("result").innerHTML = ' a, b, c ko phải là cạnh của 1 tam giác vuông'
+    if (a + b > c && a + c > b && b + c > a) {
+        if (a * a === b * b + c * c || b * b === c * c + a * a || c * c === b * b + a * a) {
+            document.getElementById("result").innerHTML = 'a, b, c là cạnh của 1 tam giác vuông'
+        } else {
+            document.getElementById("result").innerHTML = ' a, b, c ko phải là cạnh của 1 tam giác vuông'
+        }
     }
 </script>

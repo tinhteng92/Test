@@ -12,11 +12,11 @@
     let a = parseInt(prompt('Nhập a: '));
     let b = parseInt(prompt('Nhập b: '));
     let c = parseInt(prompt('Nhập c: '));
-
-    if (a === b && a === c  && b === c ) {
-        document.getElementById("result").innerHTML = 'a, b, c là cạnh của 1 tam giác đều'
-    }
-    else {
-        document.getElementById("result").innerHTML = ' a, b, c ko phải là cạnh của 1 tam giác đều'
+    if (a + b > c && a + c > b && b + c > a) {
+        if (a === b && a === c && b === c) {
+            document.getElementById("result").innerHTML = 'a, b, c là cạnh của 1 tam giác đều'
+        } else {
+            document.getElementById("result").innerHTML = ' a, b, c ko phải là cạnh của 1 tam giác đều'
+        }
     }
 </script>
