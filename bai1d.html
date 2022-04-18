@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="result"></p>
+</body>
+</html>
+<script>
+    let nam = parseInt(prompt('Nhập năm: '));
+    let theKy
+    if ( nam % 100 == 0){
+        theKy = parseInt(nam/100 +1);
+        document.getElementById("result").innerHTML = theKy;
+    }else {
+        theKy = parseInt(nam/100 + 1);
+        document.getElementById("result").innerHTML = theKy;
+    }
+
+</script>
